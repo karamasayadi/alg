@@ -1,0 +1,114 @@
+algorithme ex1
+var 
+t1 : array of integer;
+t2 :array of integer;
+t3:array of integer;
+som,i,j,n : integer;
+begin 
+j=0
+n= t3.length-1 
+for (i from 0 to t1.length-1 step1)do 
+if t1[i]<>t1[i+1]then 
+t3[j]=t1[i];
+n=t3.length-1 ;
+j++;
+end if 
+end for
+for  (i from 0 to t2.length-1 step1)do 
+if t2[i]<>t2[i+1]then 
+for  (i from 0 to t3.length-1 step1)do 
+if (t3[j]<>t2[i])then
+n+1=t2[i];
+j++;
+end if 
+end if 
+end for 
+end for 
+for  (i from 0 to t3.length-1 step1)do
+som=som +t[i];
+end for 
+write (som);
+end.
+
+algorithme ex1 
+var 
+t1 : array of integer;
+t2 :array of integer;
+t3 : HASH_TABLE<INTEGER>;
+som,i,j,n : integer;
+begin 
+for  (i from 0 to t2.length-1 step1)do 
+if t2[i]<>t2[i+1]then 
+for  (i from 0 to t3.length-1 step1)do 
+if (t3[j]<>t2[i])then
+n+1=t2[i];
+j++;
+end if 
+end if 
+end for 
+end for 
+for  (i from 0 to t3.length-1 step1)do
+som=som +t[i];
+end for 
+write (som);
+end.
+
+
+
+algorithme ex2
+var 
+tab1 : array of integer;
+tab2 :array of integer;
+som,i,j : integer;
+begin 
+for (i from 0 to tab1.length-1 step1)do 
+for (j from 0 to i step1)do
+if tab1[i]=tab2[j]
+som=som+tab2[j]+tab1[i];
+end if 
+end for
+end for 
+write (som);
+end.
+
+algorithme 
+var 
+t1 : array of integer;
+t2 :array of integer;
+t3 : HASH_TABLE<INTEGER>;
+som,i,j,n : integer;
+begin 
+for  (i from 0 to t1.length-1 step1)do 
+if t1[i]=t1[i+1]then 
+for  (i from 0 to t2.length-1 step1)do 
+if (t2[j]=t2[i+1])then
+
+n+1=t2[i];
+j++;
+end if 
+end if 
+end for 
+end for 
+for  (i from 0 to t3.length-1 step1)do
+som=som +t[i];
+end for 
+write (som);
+end.
+
+var 
+i=0;
+j=0;
+x=0;
+t1=[];
+t2=[];
+for (i=0;i<t1.length-1;i++) do 
+{
+ for (j=0;j<t2.length-1;j++){
+ if( t[i]=t[j] )
+ {i++;}
+ else 
+ {
+   
+ }
+  }
+}
